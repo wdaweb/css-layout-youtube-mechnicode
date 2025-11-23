@@ -1,0 +1,217 @@
+/* 全域設定與變數 */
+:root {
+	--yt-background: #0f0f0f;
+	--yt-surface: #212121;
+	--yt-text-primary: #ffffff;
+	--yt-text-secondary: #aaaaaa;
+	--yt-border-color: #3d3d3d;
+	--yt-icon-color: #909090;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--yt-background);
+	color: var(--yt-text-primary);
+}
+
+/* Header 樣式 */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 24px;
+	height: 56px;
+	background-color: var(--yt-background);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	border-bottom: 1px solid var(--yt-border-color);
+}
+
+.header-left,
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.youtube-logo {
+	height: 20px;
+	/* filter: invert(1); 將 SVG 轉為白色 */
+}
+
+.icon {
+	cursor: pointer;
+	color: var(--yt-text-primary);
+}
+
+.header-center {
+	display: flex;
+	align-items: center;
+	flex: 0 1 728px; /* flex-grow, flex-shrink, flex-basis */
+	margin: 0 40px;
+}
+
+.search-bar {
+	display: flex;
+	flex-grow: 1;
+	border: 1px solid var(--yt-border-color);
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+.search-bar input {
+	flex-grow: 1;
+	background-color: #121212;
+	border: none;
+	padding: 0 16px;
+	color: var(--yt-text-primary);
+	font-size: 16px;
+}
+
+.search-bar input:focus {
+	outline: none;
+}
+
+.search-btn {
+	background-color: var(--yt-surface);
+	border: none;
+	padding: 0 20px;
+	cursor: pointer;
+	border-left: 1px solid var(--yt-border-color);
+}
+
+.mic-btn {
+	background-color: var(--yt-surface);
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-left: 12px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.user-avatar {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+/* Main Container & Sidebar */
+.main-container {
+	display: flex;
+	height: calc(100vh - 56px);
+}
+
+.sidebar {
+	width: 240px;
+	padding-top: 12px;
+	background-color: var(--yt-background);
+	flex-shrink: 0;
+}
+
+.sidebar-item {
+	display: flex;
+	align-items: center;
+	padding: 0 24px;
+	height: 40px;
+	cursor: pointer;
+	gap: 24px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.sidebar-item:hover {
+	background-color: var(--yt-surface);
+}
+
+.sidebar-item.active {
+	background-color: var(--yt-surface);
+	font-weight: 700;
+}
+
+.sidebar hr {
+	border: none;
+	border-top: 1px solid var(--yt-border-color);
+	margin: 12px 0;
+}
+
+/* Video Grid */
+.video-grid {
+	flex-grow: 1;
+	padding: 24px;
+	overflow-y: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 24px 16px;
+}
+
+.video-card {
+	cursor: pointer;
+}
+
+.thumbnail-container {
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.thumbnail-container img {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	border-radius: 12px;
+	object-fit: cover;
+}
+
+.video-duration {
+	position: absolute;
+	bottom: 8px;
+	right: 8px;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.video-details {
+	display: flex;
+	gap: 12px;
+}
+
+.channel-avatar {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+}
+
+.video-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.video-title {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0 0 4px 0;
+	line-height: 1.4;
+	/* 限制標題最多顯示兩行 */
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.channel-name,
+.video-stats {
+	font-size: 14px;
+	color: var(--yt-text-secondary);
+	margin: 0;
+	line-height: 1.3;
+}

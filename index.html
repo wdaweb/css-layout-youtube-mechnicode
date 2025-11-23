@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 首頁仿製</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts 和 Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <span class="material-symbols-outlined icon">menu</span>
+            <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="YouTube Logo"
+                class="youtube-logo">
+        </div>
+        <div class="header-center">
+            <div class="search-bar">
+                <input type="text" placeholder="搜尋">
+                <button class="search-btn">
+                    <span class="material-symbols-outlined icon">search</span>
+                </button>
+            </div>
+            <button class="mic-btn">
+                <span class="material-symbols-outlined icon">mic</span>
+            </button>
+        </div>
+        <div class="header-right">
+            <span class="material-symbols-outlined icon">video_call</span>
+            <span class="material-symbols-outlined icon">notifications</span>
+            <img src="https://i.pravatar.cc/40?img=1" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-item active">
+                <span class="material-symbols-outlined">home</span>
+                <span>首頁</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="material-symbols-outlined">local_fire_department</span>
+                <span>發燒影片</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="material-symbols-outlined">subscriptions</span>
+                <span>訂閱內容</span>
+            </div>
+            <hr>
+            <div class="sidebar-item">
+                <span class="material-symbols-outlined">video_library</span>
+                <span>媒體庫</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="material-symbols-outlined">history</span>
+                <span>觀看紀錄</span>
+            </div>
+        </aside>
+
+        <!-- Video Grid -->
+        <main class="video-grid">
+            <!-- Video Card 1 -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/1/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">12:34</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=2" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">探索未知：馬里亞納海溝的深海巨獸</h3>
+                        <p class="channel-name">深海探險家</p>
+                        <p class="video-stats">觀看次數：120 萬次・2 週前</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/2/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">08:55</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=3" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">10分鐘學會Python：從入門到第一個程式</h3>
+                        <p class="channel-name">程式碼大師</p>
+                        <p class="video-stats">觀看次數：88 萬次・1 個月前</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/3/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">25:10</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=4" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">終極和牛漢堡！在家也能做出米其林等級美味</h3>
+                        <p class="channel-name">美食無國界</p>
+                        <p class="video-stats">觀看次數：230 萬次・3 週前</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Card 4 -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/4/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">15:02</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=5" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">冰島極光之旅：一生必看的自然奇觀</h3>
+                        <p class="channel-name">旅行的意義</p>
+                        <p class="video-stats">觀看次數：95 萬次・5 天前</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ... 更多影片卡片 ... -->
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/5/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">05:43</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=6" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">新手機開箱！2024年最值得買的旗艦機？</h3>
+                        <p class="channel-name">3C科技說</p>
+                        <p class="video-stats">觀看次數：54 萬次・1 天前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/6/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">18:21</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=7" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">高效率工作法：如何每天多出2小時？</h3>
+                        <p class="channel-name">生產力駭客</p>
+                        <p class="video-stats">觀看次數：76 萬次・2 個月前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/7/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">22:00</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=8" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">經典電影解析：《星際效應》背後的科學</h3>
+                        <p class="channel-name">影癡聊電影</p>
+                        <p class="video-stats">觀看次數：180 萬次・6 個月前</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <img src="https://picsum.photos/seed/8/400/225" alt="Video Thumbnail">
+                    <span class="video-duration">09:13</span>
+                </div>
+                <div class="video-details">
+                    <img src="https://i.pravatar.cc/36?img=9" alt="Channel Avatar" class="channel-avatar">
+                    <div class="video-info">
+                        <h3 class="video-title">貓咪的奇怪行為大解密！你家主子也是這樣嗎？</h3>
+                        <p class="channel-name">萌寵星球</p>
+                        <p class="video-stats">觀看次數：310 萬次・4 週前</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
